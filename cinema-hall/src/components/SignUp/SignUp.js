@@ -22,7 +22,6 @@ const SignUp = () => {
     const location = useLocation();
     let { from } = location.state || { from: { pathname: "/booking" } };
 
-    // initializeLoginFramework();
     if(firebase.apps.length === 0){
         firebase.initializeApp(firebaseConfig);
     }
