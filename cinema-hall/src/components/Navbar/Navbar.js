@@ -15,7 +15,7 @@ const Navbar = () => {
                         <NavLink to="/" > <a class="nav-link"  > Home <span class="sr-only">(current)</span></a> </NavLink>
                     </li>
                     <li class="nav-item active">
-                    <NavLink to="/" > <a class="nav-link"  > Booking <span class="sr-only">(current)</span></a> </NavLink>
+                    <NavLink to="/booking" > <a class="nav-link"  > Booking <span class="sr-only">(current)</span></a> </NavLink>
                     </li>
                     <li class="nav-item active">
                         <NavLink to="/login" >  <a class="nav-link"> Login <span class="sr-only">(current)</span></a> </NavLink>

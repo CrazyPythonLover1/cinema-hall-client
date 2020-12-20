@@ -29,7 +29,7 @@ function MovieDetail() {
       </div>
 
       <div className="movieDetails">
-        <h1>{movieInfo?.movieName}</h1>
+        <h1 style={{color:"purple"}} >{movieInfo?.movieName}</h1>
         <button
           onClick={() => setCalendar(true)}
           className="btn-primary btn-brand btn-lg"
