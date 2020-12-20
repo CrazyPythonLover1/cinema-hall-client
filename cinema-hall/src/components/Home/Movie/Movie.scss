@@ -8,6 +8,11 @@
     object-fit: contain;
     /* height: 200px; */
     width: 100%;
+    transition: all .5s;
+
+    &:hover{
+        transform: scale(1.1);
+    }
   }
   
   .movie > p {
@@ -20,6 +25,7 @@
     height: 20%;
     margin: -56px auto 0px auto;
     z-index: 999;
+    text-align: center;
   }
   @media (max-width: 500px) {
     .movie {

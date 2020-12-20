@@ -10,13 +10,16 @@ import {
 import Login from './components/Login/Login';
 import Home from './components/Home/Home';
 import SignUp from './components/SignUp/SignUp';
+import MovieDetail from './components/MovieDetail/MovieDetail';
 
 export const UserContext = createContext();
 
 function App() {
   const [loggedInUser, setLoggedInUser] = useState({});
+  const [movieInfo, setMovieInfo] = useState({});
+  console.log(movieInfo)
   return (
-    <UserContext.Provider value={[loggedInUser, setLoggedInUser]}> 
+    <UserContext.Provider value={[loggedInUser, setLoggedInUser, movieInfo, setMovieInfo]}> 
       <div className="App">
         <Router>
           <Navbar />
@@ -27,6 +30,9 @@ function App() {
             </Route>
             <Route path="/signup">
               <SignUp />
+            </Route>
+            <Route path="/movie-detail">
+              <MovieDetail />
             </Route>
             <Route exact path="/">
               <Home />

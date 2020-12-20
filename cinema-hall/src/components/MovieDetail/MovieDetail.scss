@@ -1,0 +1,37 @@
+.movieDetail {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 100px;
+
+    .movieDetail__img {
+        flex: 0.5;
+      }
+      .movieDetail__img > img {
+        object-fit: contain;
+        width: 300px;
+      }
+      
+      .movieDetails {
+        flex: 0.5;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        button {
+            margin: 30px 0px;
+            background: linear-gradient(45deg, #FFB7B7 0%, #727272 100%), linear-gradient(127.43deg, #00FFFF 0%, #4469ff 100%), radial-gradient(100.22% 100% at 70.57% 0%, #0d00ff 0%, #5500ff 100%);
+background-blend-mode: screen, overlay, hard-light, color-burn, color-dodge, normal;
+          }
+
+          a{
+            button {
+                margin: 30px 0px;
+              }
+          }
+      }
+      
+      
+  }
+  

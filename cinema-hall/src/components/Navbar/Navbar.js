@@ -5,7 +5,7 @@ const Navbar = () => {
     return (
         <div>
             <nav class="navbar navbar-expand-lg navbar-light bg-light" style={{ padding:" 0 50px" }} >
-            <a class="navbar-brand" href="/" style={{fontWeight:"600",fontSize: "24px"}}> Cinema Hall </a>
+             <NavLink to="/" > <a class="navbar-brand" style={{fontWeight:"600",fontSize: "24px"}}> Cinema Hall </a> </NavLink>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
