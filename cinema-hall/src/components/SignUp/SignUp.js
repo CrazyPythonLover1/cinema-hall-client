@@ -1,12 +1,9 @@
 import React, { useState, useContext } from 'react';
 import './SignUp.scss'
-// import fbIcon from '../../images/Icon/fb.png';
-// import gIcon from '../../images/Icon/google.png';
 import { Link, useHistory, useLocation } from 'react-router-dom';
 import firebase from "firebase/app";
 import "firebase/auth";
 import firebaseConfig from '../Login/firebase.config';
-// import { initializeLoginFramework, createUserWithEmailAndPassword, signInWithEmailAndPassword, handleGoogleSignIn, handleFbSignIn } from '../Login/loginManager';
 import { UserContext } from '../../App';
 
 const SignUp = () => {
@@ -20,7 +17,7 @@ const SignUp = () => {
         photo: '',
     });
 
-    const [loggedInUser, setLoggedInUser,trip, id, setId] = useContext(UserContext);
+    const [loggedInUser, setLoggedInUser] = useContext(UserContext);
     const history = useHistory();
     const location = useLocation();
     let { from } = location.state || { from: { pathname: "/booking" } };
@@ -30,19 +27,7 @@ const SignUp = () => {
         firebase.initializeApp(firebaseConfig);
     }
 
-    const googleSignIn = () => {
-        // handleGoogleSignIn()
-        //     .then(res => {
-        //         handleResponse(res, true);
-        //     })
-    }
 
-    const fbSignIn = () => {
-        // handleFbSignIn()
-        //     .then(res => {
-        //         handleResponse(res, true);
-        //     })
-    }
 
 
 
