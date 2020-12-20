@@ -1,0 +1,98 @@
+.orange{
+    color: orange;
+}
+
+.signup{
+    padding-top: 100px;
+}
+.form{
+    text-align: center;
+    width:37rem;
+    border: 1px solid lightgray;
+    margin: auto;
+    padding-bottom: 1rem;
+    padding-top: 30px;
+}
+
+.form >input{
+    width:85%;
+    border: none;
+    border-bottom: 1px solid lightgray;
+    padding: 10px 5px;
+    margin: 1rem;
+    outline-width: 0;
+    color: orange;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+input::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: orange;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  
+  input::-moz-placeholder {
+    /* Firefox 18- */
+    color: orange;
+  }
+
+  .login__options{
+      display: flex;
+      flex-grow: 1;
+  }
+  .login__option{
+      padding: 0 2.6rem;
+  }
+  
+  .login__option__forgot{
+      margin-left: auto;
+      padding-right: 2.7rem;
+      font-weight: bold;
+  }
+
+
+  .form > .button{
+    border-radius: 5px;
+    background: orange;
+    color: black;
+}
+
+
+.or{
+    text-align: center;
+    margin: 2rem;
+}
+
+.or{
+    width:30rem;
+    border-bottom: 1px solid lightgray;
+    margin: auto;
+    padding-top: 2rem;
+}
+
+.another__login_options{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.another__login__option{
+    position: relative;
+    width: 30rem;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    margin: 1rem 0 0 0;
+    border: 1px solid lightgray;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+.another__login__option > img{
+    width: 1.5rem;
+    position: absolute;
+    left: 1rem;
+}
